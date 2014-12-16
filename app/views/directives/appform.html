@@ -1,0 +1,14 @@
+<form ng-submit="onsubmit()">
+    <div class="row">
+        <div class="col-md-3" ng-repeat="field in fields">
+            <appfield field="field" inedition="$parent.inedition"></appfield>
+        </div>
+    </div>
+    <br class="clearfix">
+    <div class="row">
+        <div class="col-md-12">
+            <button class="btn btn-success" type="submit"> Salvar</button>
+        </div>
+    </div>
+    <br class="clearfix">
+</form>

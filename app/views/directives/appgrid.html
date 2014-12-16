@@ -1,0 +1,16 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th ng-repeat="column in columns">
+      	{{ column.displayName }}
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="row in data">
+      <td ng-repeat="column in $parent.columns" ng-click="$parent.rowclick($parent.$index)">
+      	{{ row[column.name] }}
+      </td>
+    </tr>    
+  </tbody>
+</table>
